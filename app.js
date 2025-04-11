@@ -10,10 +10,12 @@ function read(text){
      var speech = new SpeechSynthesisUtterance();
      speech.text = text;
      if(text == 'Hello'){
-          speech.text ='bye';
+          var s = new Audio('music/a.mp3')
+          s.play();
      }
      else if(text=='What is your name'){
           speech.text = 'my name is sujon biswas';
+
      }
      else if(text == 'my favorite player'){
           speech.text = 'leneo messi';
@@ -24,4 +26,5 @@ function read(text){
 
      document.getElementById('res').innerHTML=speech.text;
      window.speechSynthesis.speak(speech);
+
 }
