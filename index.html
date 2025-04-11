@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- <script src="https://kit.fontawesome.com/c924b405ea.js" crossorigin="anonymous"></script> -->
+     <title>Sujon Biswas</title>
+</head>
+
+<style>
+     h1{
+          text-align: center;
+     }
+     .cont{
+          text-align: center;
+     }
+     i{
+          font-size: 2rem;
+          color: violet;
+          border: 1px solid green;
+          border-radius: 50%;
+          transition: background 0.5s;
+          padding: 10px;
+     }
+     i:hover{
+          background-color: greenyellow;
+          cursor: pointer;
+     }
+</style>
+<body>
+     <div class="cont">
+          <h1> Personal ALEXA By Javascript</h1>
+          <i onclick="recognition.start()" class="fa-solid fa-microphone">voice</i>
+
+          <h4 id="output"></h4>
+          <h4 id="res"></h4>
+
+     </div>
+
+     <script src="./app.js"></script>
+</body>
+</html>
