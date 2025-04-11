@@ -9,12 +9,12 @@ recognition.onresult = function(event){
 function read(text){
      var speech = new SpeechSynthesisUtterance();
      speech.text = text;
-     if(text == 'hello'){
+     if(text == 'Hello'){
           speech.text = 'bye'
 
 
      }
-     else if(text == "what is you name"){
+     else if(text == "What is you name"){
           speech.text = "my name is sujon biswas"
      }
 
